@@ -1,0 +1,52 @@
+package pipatj;
+import java.util.Scanner;
+public class Pipatj {
+
+     public static void Stringopcion (int op){
+        
+        String resultado;
+        switch (op){
+            case 1:
+                resultado=("piedra");
+                break;
+                case 2:
+                    resultado=("papel");
+                break;
+                case 3:
+                    resultado=("tijera");
+                break;
+        }}
+
+    
+    public static void main(String[] args) {
+       Scanner leer = new Scanner(System.in);
+       int ju,otra, jupc;
+        
+       do{
+       System.out.println("Eliga su jugada");
+       System.out.println("1)piedra");
+       System.out.println("2)papel");
+       System.out.println("3)tijeras");
+       
+       ju = leer.nextInt();
+       
+       jupc =  (int) (Math.random()*3 +1);
+       
+       System.out.println("usuario: "+ ju +"\nmaquina: "+ jupc );
+          
+          if (ju== jupc){
+              System.out.println("empate nadie gana");
+          }else if((ju==1 && jupc==3
+                  ||ju==2 && jupc==1
+                  ||ju==3 && jupc==2)){
+             
+              System.out.println("Felicidades, Ganaste.");
+          }else{
+              
+              System.out.println("Perdiste nadie te quiere XD .");
+          }
+          otra=1;
+                  } while(otra==1);             
+              }
+    {}}
+          

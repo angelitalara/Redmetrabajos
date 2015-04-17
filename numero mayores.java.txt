@@ -1,0 +1,28 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package numero.mayor;
+
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+/**
+ *
+ * @author LAB1-PC03
+ */
+public class NumeroMayor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int a=3,b=12,c=10;
+        if(a>b &&a>c){
+            System.out.println(a);
+        }else if(b>a && b>c){
+            System.out.println(b);
+        }else{
+            System.out.println(c);
+    }
+}
+}
